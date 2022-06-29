@@ -11,6 +11,9 @@ document.addEventListener('DOMContentLoaded', () => {
      
 });
 
+function changePage(page) {
+  alert(123);
+}
 
 function changeLang(lang) {
   localStorage.setItem("lang", lang);
