@@ -12,41 +12,67 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <meta name="robots" content="index, follow">
 
-        <link rel="shortcut icon" href="./public/img/logos/64.png" type="image/png">
-        <link rel="apple-touch-icon" href="./public/img/logos/512.png">
+        <link rel="shortcut icon" href="./public/img/logoNoBg.svg" type="image/svg">
+        <link rel="apple-touch-icon" href="./public/logoNoBg.svg">
         <link rel="stylesheet" type="text/css" href="./public/css/style.css">
         <!-- <link rel="stylesheet" href="./public/css/mobileStyle.css"> -->
         <link rel="manifest" href="./public/json/manifest.json"> 
-
-      </head>
-
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Bad+Script&display=swap" rel="stylesheet">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Bad+Script&family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
     <body>
-      <div class="mainContainer">
+      <div class="mainContainer bg" id="bg1">
         <header>
           <div class="logoAndLangsContainer">
             <div class="logoAndLangs">
-              <img src="public/img/logoNoBg.svg" class="logo">
+              <div class="langsContainer">
+                <span class="langElement langActiveElement"  onclick='changeLang("ru");'>ru</span>
+                <span class="langElement" onclick='changeLang("kz");'>kz</span>
+                <span class="langElement" onclick='changeLang("en");'>en</span>
+              </div>
+              <div class="logoContainer">
+                <img src="public/img/logoNoBg.svg" class="logo">
+              </div>
             </div>
             <h3 class="ourMenu">Наше меню</h3>
           </div>
           <div class="menuContainer">
             <menu>
-              <div class="menuItem">Основное меню</div>
+              <div class="menuItem menuActiveItem" style="margin-top: 0px">Основное меню</div>
               <div class="menuItem">Десерты</div>
               <div class="menuItem">Алкогольные напитки</div>
-              <div class="menuItem">Новитки кухни</div>
-              <div class="menuItem">Новинки бара и десертов</div>
+              <div class="menuItem new">Новитки кухни</div>
+              <div class="menuItem new">Новинки бара и десертов</div>
             </menu>
           </div>
         </header>
+        <div class="sliderContainer">
+          <div class="blur"></div>
+        </div>
+        <footer>
+          <p onclick="location.href = 'https:/\/www.instagram.com/coffeeboom.talan.atyrau/'">
+            <img src="public/img/icons/inst.png">
+            coffeboom.talan.atyrau
+          </p>
+          <p class="bp">г. Атырау, Абулхаир Хана 63, Блок 3, ЖК “TALAN”</p>
+          <p class="copyright">© coffeeboom.talan.atyrau, 2022 Все права защищены. Перепечатка и цитирование материалов запрещены</p>
+        </footer>
+      </div>
+
+      <div class="wpContainer" onclick="location.href = 'http:/\/wa.me/+77007995999'">
+        <img src="public/img/icons/wp.png">
+        <span class="btnOrder">оформить заказ</span>
       </div>
       
 
-      <script src="./public/js/main.js" type="module"></script>
+      <script src="settings.js"></script>
       <script>
         setTimeout(() => {
-          location.reload();
-        }, 900);
+          //location.reload();
+        }, 2000);
       </script>
   </body>
 </html>
