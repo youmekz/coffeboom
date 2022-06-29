@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+
+        <title>CoffeBoom</title>
+
+        <meta charset="UTF-8">
+        <meta name="theme-color" content="#fff">
+        <meta name="author" content="webnet.kz">
+        <meta name="description" content="mini project stopwatch of webnet.kz">
+        <meta name="keywords" content="stopwatch, webnet, webnet.kz, PWA">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta name="robots" content="index, follow">
+
+        <link rel="shortcut icon" href="./public/img/logos/64.png" type="image/png">
+        <link rel="apple-touch-icon" href="./public/img/logos/512.png">
+        <link rel="stylesheet" type="text/css" href="./public/css/style.css">
+        <!-- <link rel="stylesheet" href="./public/css/mobileStyle.css"> -->
+        <link rel="manifest" href="./public/json/manifest.json"> 
+
+      </head>
+
+    <body>
+      <div class="mainContainer">
+        <header>
+          <div class="logoAndLangsContainer">
+            <div class="logoAndLangs">
+              <img src="public/img/logoNoBg.svg" class="logo">
+            </div>
+            <h3 class="ourMenu">Наше меню</h3>
+          </div>
+          <div class="menuContainer">
+            <menu>
+              <div class="menuItem">Основное меню</div>
+              <div class="menuItem">Десерты</div>
+              <div class="menuItem">Алкогольные напитки</div>
+              <div class="menuItem">Новитки кухни</div>
+              <div class="menuItem">Новинки бара и десертов</div>
+            </menu>
+          </div>
+        </header>
+      </div>
+      
+
+      <script src="./public/js/main.js" type="module"></script>
+      <script>
+        setTimeout(() => {
+          location.reload();
+        }, 900);
+      </script>
+  </body>
+</html>

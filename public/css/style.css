@@ -1,0 +1,24 @@
+:root {
+  --whiteColor: rgb(255, 255, 255);
+  --redColor: rgb(255, 0, 0);
+  --bgColor: #202023;
+  --mainColor: #658DFF;
+  -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+}
+* {
+  margin: 0;
+  padding: 0;
+}
+html, body {
+  font-family: sans-serif;
+  scroll-behavior: smooth;
+  overflow-x: hidden; 
+  transition-duration: 500ms;
+}
+header {
+  min-height: 184px;
+  height: 184px;
+  display: flex;
+  margin: 38px 22px;
+  justify-content: space-between;
+}
