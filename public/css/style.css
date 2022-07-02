@@ -151,9 +151,10 @@ h3 {
   left: 22px;
 }
 .slider {
-  position: absolute;
+  position: relative;
   top: 0;
   left: 0;
+  width: 100%;
   display: flex;
   flex-wrap: nowrap;
   overflow-y: hidden!important;
@@ -162,7 +163,7 @@ h3 {
 .slider > div {
   display: inline-block;
   height: 70vh!important;
-  width: 87vw;
+  width: 87vw!important;
 }
 .slider > div > img {
 
@@ -171,6 +172,7 @@ h3 {
   position: absolute;
   height: 100%;
   width: 30px;
+  top: 0px;
   z-index: 6;
   left: calc(100vw - 50px);
   backdrop-filter: blur(15px);
