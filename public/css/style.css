@@ -166,7 +166,19 @@ h3 {
   width: 87vw!important;
 }
 .slider > div > img {
-
+  height: 100%;
+  animation: showImg 0.5s linear;
+  position: relative;
+}
+@keyframes showImg {
+  from {
+    top: 100px;
+    opacity: 0;
+  }
+  to {
+    top: 0;
+    opacity: 1;
+  }
 }
 .blur {
   position: absolute;
