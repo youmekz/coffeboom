@@ -725,21 +725,26 @@ function changeMenuItem() {
   let page = localStorage.getItem("page");
   let menuItems = document.querySelectorAll(".menuItem");
   
-  
+  let bg = document.querySelector(".bg");
 
   if(page == "index") {
+    bg.id = "bg1";
     menuItems[0].classList.add("menuActiveItem");
   }
   if(page == "dess") {
+    bg.id = "bg2";
     menuItems[1].classList.add("menuActiveItem");
   }
   if(page == "alco") {
+    bg.id = "bg3";
     menuItems[2].classList.add("menuActiveItem");
   }
   if(page == "new") {
+    bg.id = "bg4";
     menuItems[3].classList.add("menuActiveItem");
   }
   if(page == "newalcodess") {
+    bg.id = "bg5";
     menuItems[4].classList.add("menuActiveItem");
   }
 }

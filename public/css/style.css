@@ -77,12 +77,37 @@ header {
   background: url("../img/bgs/bg1.png");
   background-attachment: fixed;
 }
+#bg2 {
+  background: url("../img/bgs/bg2.png");
+  background-attachment: fixed;
+}
+#bg3 {
+  background: url("../img/bgs/bg3.png");
+  background-attachment: fixed;
+}
+#bg4 {
+  background: url("../img/bgs/bg4.png");
+  background-attachment: fixed;
+}
+#bg5 {
+  background: url("../img/bgs/bg5.png");
+  background-attachment: fixed;
+}
 .bg {
   min-height: 100vh;
   min-width: 100vh;
   background-position: center center;
   background-repeat: no-repeat;
   background-size: cover;
+  animation: showBg 0.5s linear;
+}
+@keyframes showBg {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
 }
 h3 {
   color: #fff;
