@@ -48,9 +48,24 @@ let newEn = `<div>
 
 
 document.addEventListener('DOMContentLoaded', () => {
+    let menuItems = document.querySelector(".menuItem");
+    menuItems.classList.add("menuActiveItem");
     localStorage.setItem("lang", "ru");
     localStorage.setItem("page", "index");
+    changeMenuItem();
 });
+
+
+function changeMenuItem() {
+  let page = localStorage.getItem("page");
+  let menuItems = document.querySelectorAll(".menuItem");
+  let menuActive = document.querySelector(".menuActiveItem");
+  menuActive.classList.remove("menuActiveItem");
+
+  if(page == "index") {
+    menuItems[0].classList("menuActiveItem");
+  }
+}
 
 function changePage(page) {
   let lang = localStorage.getItem("lang");
